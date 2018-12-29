@@ -1,0 +1,31 @@
+Started by user [8mha:////4FMF4vKheU9NlMHd/oc3igA8LWsL4Eqv8H90pD6XukhjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/test
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shmagar/shrepo1.git # timeout=10
+Fetching upstream changes from https://github.com/shmagar/shrepo1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/shmagar/shrepo1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9081e1a8797391fac4eb435abb663526b604ae37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9081e1a8797391fac4eb435abb663526b604ae37
+Commit message: "file updated for testing"
+ > git rev-list --no-walk 9081e1a8797391fac4eb435abb663526b604ae37 # timeout=10
+[test] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/apache-maven/bin/mvn clean
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.autofact:Helloworldwebapp >--------------------
+[INFO] Building Helloworldwebapp Maven Webapp 0.0.2
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[8mha:////4JlZA22J0/2ul7OTou806lUgKdqN/L6PNUNYnnBo5JlgAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Helloworldwebapp ---
+[INFO] Deleting /var/lib/jenkins/workspace/test/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.980 s
+[INFO] Finished at: 2018-12-16T06:48:06Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

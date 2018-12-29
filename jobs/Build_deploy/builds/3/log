@@ -1,0 +1,7 @@
+Started by user [8mha:////4FMF4vKheU9NlMHd/oc3igA8LWsL4Eqv8H90pD6XukhjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building remotely on [8mha:////4FeOz494mZC6Mqd7x/bmZ7GGNZC9iRvVH3zwh8pEtMzmAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/TygOw0BADPgR8QAAAA=[0mnode1 (app-server) in workspace /home/vagrant/Jenkins/workspace/Build_deploy
+[Build_deploy] $ /bin/sh -xe /tmp/jenkins8976755010380407628.sh
++ curl -u 'http://35.237.112.146:8081/artifactory/application1/<helloworldwebapp.war>'
+/tmp/jenkins8976755010380407628.sh: line 2: admin: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,20 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.plugins.jira.JiraProjectProperty_-DescriptorImpl plugin="jira@3.0.5">
+  <sites>
+    <hudson.plugins.jira.JiraSite>
+      <url>http://35.231.45.239:8080/</url>
+      <alternativeUrl>http://35.231.45.239:8080/</alternativeUrl>
+      <useHTTPAuth>true</useHTTPAuth>
+      <credentialsId>6804ba6c-7e08-4e07-9dcd-f0ebbda649ff</credentialsId>
+      <supportsWikiStyleComment>false</supportsWikiStyleComment>
+      <recordScmChanges>false</recordScmChanges>
+      <disableChangelogAnnotations>false</disableChangelogAnnotations>
+      <updateJiraIssueForAllStatus>false</updateJiraIssueForAllStatus>
+      <timeout>10</timeout>
+      <readTimeout>30</readTimeout>
+      <threadExecutorNumber>10</threadExecutorNumber>
+      <dateTimePattern></dateTimePattern>
+      <appendChangeTimestamp>false</appendChangeTimestamp>
+    </hudson.plugins.jira.JiraSite>
+  </sites>
+</hudson.plugins.jira.JiraProjectProperty_-DescriptorImpl>

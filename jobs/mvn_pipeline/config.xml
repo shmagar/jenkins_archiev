@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.30">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.61">
+    <script>node {
+    tools{
+    maven &apos;apache maven&apos;
+    jdk &apos;java 8&apos;
+    }
+    stages {
+        stage (&apos;initialize&apos;)
+        steps {
+            sh &apos;&apos;&apos;
+            echo &quot;PATH = $(PATH)
+            echo &quot;MAVEN_HOME = $(MAVEN_HOME)
+            &apos;&apos;&apos;
+        }
+   stage (&apos;scm-checkout&apos;) {
+    checkout([$class: &apos;GitSCM&apos;, 
+    branches: [[name: &apos;*/master&apos;]], 
+   doGenerateSubmoduleConfigurations: false, 
+    extensions: [], submoduleCfg: [], 
+    userRemoteConfigs: [[url: &apos;https://github.com/shmagar/shrepo1.git&apos;]]])
+}
+ stage (&apos;build&apos;) {
+     /*withMaven (maven: &apos;Maven 3.5.4&apos;) {*/
+    sh &apos;mvn clean&apos;
+}
+}
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,85 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.30">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.12">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>77</queueId>
+  <timestamp>1545361476614</timestamp>
+  <startTime>1545361476625</startTime>
+  <result>FAILURE</result>
+  <duration>460</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    tools{
+    maven &apos;apache maven&apos;
+    jdk &apos;java 8&apos;
+    }
+    stages {
+        stage (&apos;initialize&apos;)
+        steps {
+            sh &apos;&apos;&apos;
+            echo &quot;PATH = $(PATH)
+            echo &quot;MAVEN_HOME = $(MAVEN_HOME)
+            &apos;&apos;&apos;
+        }
+   stage (&apos;scm-checkout&apos;) {
+    checkout([$class: &apos;GitSCM&apos;, 
+    branches: [[name: &apos;*/master&apos;]], 
+   doGenerateSubmoduleConfigurations: false, 
+    extensions: [], submoduleCfg: [], 
+    userRemoteConfigs: [[url: &apos;https://github.com/shmagar/shrepo1.git&apos;]]])
+}
+ stage (&apos;build&apos;) {
+     /*withMaven (maven: &apos;Maven 3.5.4&apos;) {*/
+    sh &apos;mvn clean&apos;
+}
+}
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>85455379</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>18115401</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>340816673</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>83059102</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>10618729</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>7</iota>
+    <head>1:7</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

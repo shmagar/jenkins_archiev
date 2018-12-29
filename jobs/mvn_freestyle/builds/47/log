@@ -1,0 +1,37 @@
+Started by user [8mha:////4FMF4vKheU9NlMHd/oc3igA8LWsL4Eqv8H90pD6XukhjAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building on master in workspace /var/lib/jenkins/workspace/mvn_freestyle
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shmagar/shrepo1.git # timeout=10
+Fetching upstream changes from https://github.com/shmagar/shrepo1.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/shmagar/shrepo1.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 23274d604ad5bad5c74661dcbe07b6ba4896d933 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 23274d604ad5bad5c74661dcbe07b6ba4896d933
+Commit message: "Create jenkinsfile"
+ > git rev-list --no-walk 23274d604ad5bad5c74661dcbe07b6ba4896d933 # timeout=10
+[mvn_freestyle] $ /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/apache-maven/bin/mvn Clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.autofact:Helloworldwebapp >--------------------
+[INFO] Building Helloworldwebapp Maven Webapp 0.0.2
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.372 s
+[INFO] Finished at: 2018-12-22T08:36:44Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Unknown lifecycle phase "Clean". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] 
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Bov4JoHIkesMnC1MXsGnVLAsoFPZ294RqIXkqZ+qXMNAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55ZekOlc7RKnPKH7IxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAACsNFCqYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Build failed, created JIRA issue BUIL-1
+Finished: FAILURE
